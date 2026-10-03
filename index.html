@@ -1,4 +1,4 @@
-<!-- DASHBOARD RANKING ASESORES - MODO CLARO - MOODLE READY -->
+<!-- DASHBOARD RANKING ASESORES & OBJETIVOS CAMPAÑA - MODO CLARO - MOODLE READY -->
 <div id="moodle-ranking-dashboard" style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; color: #0f172a; padding: 24px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01); max-width: 1200px; margin: 0 auto;">
   
   <!-- Carga CDN Chart.js para gráficos -->
@@ -7,41 +7,65 @@
   <!-- Encabezado -->
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 2px solid #e2e8f0;">
     <div>
-      <h2 style="margin: 0; font-size: 26px; font-weight: 800; color: #0f172a; letter-spacing: -0.5px;">📊 Ranking Comercial de Asesores</h2>
-      <p style="margin: 4px 0 0 0; font-size: 14px; color: #64748b; font-weight: 500;">Rendimiento comercial y métricas de matriculación multimarca</p>
+      <h2 style="margin: 0; font-size: 26px; font-weight: 800; color: #0f172a; letter-spacing: -0.5px;">📊 Dashboard Comercial & Objetivos por Campaña</h2>
+      <p style="margin: 4px 0 0 0; font-size: 14px; color: #64748b; font-weight: 500;">Rendimiento comercial de asesores y grado de consecución de objetivos</p>
     </div>
     <div style="font-size: 12px; background-color: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 6px 14px; border-radius: 20px; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">
       <span style="width: 8px; height: 8px; background-color: #2563eb; border-radius: 50%;"></span>
-      Actualizado: 03/10/2026 (Sábado)
+      Actualizado: Sábado PM (03/10/2026)
     </div>
   </div>
 
   <!-- Métricas Generales (KPIs) -->
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 24px;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 28px;">
     <div style="background: #ffffff; padding: 18px; border-radius: 12px; border: 1px solid #e2e8f0; border-left: 5px solid #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-      <span style="font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Facturación Total</span>
-      <div id="kpi-facturacion" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-top: 6px;">1.852.368,70 €</div>
+      <span style="font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Facturación Total Asesores</span>
+      <div id="kpi-facturacion" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-top: 6px;">1.858.854,70 €</div>
     </div>
     <div style="background: #ffffff; padding: 18px; border-radius: 12px; border: 1px solid #e2e8f0; border-left: 5px solid #059669; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <span style="font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Total Matrículas</span>
-      <div id="kpi-ventas" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-top: 6px;">782</div>
+      <div id="kpi-ventas" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-top: 6px;">784</div>
     </div>
     <div style="background: #ffffff; padding: 18px; border-radius: 12px; border: 1px solid #e2e8f0; border-left: 5px solid #d97706; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
-      <span style="font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Asesores Visibles</span>
-      <div id="kpi-asesores" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-top: 6px;">80</div>
+      <span style="font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Consecución Objetivo Global</span>
+      <div style="font-size: 24px; font-weight: 800; color: #0f172a; margin-top: 6px;">80,29%</div>
     </div>
     <div style="background: #ffffff; padding: 18px; border-radius: 12px; border: 1px solid #e2e8f0; border-left: 5px solid #7c3aed; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <span style="font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Ticket Medio / Venta</span>
-      <div id="kpi-ticket" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-top: 6px;">2.368,76 €</div>
+      <div id="kpi-ticket" style="font-size: 24px; font-weight: 800; color: #0f172a; margin-top: 6px;">2.371,00 €</div>
     </div>
   </div>
 
-  <!-- Barra de Filtros, Búsqueda y Marca -->
+  <!-- SECCIÓN OBJETIVOS POR CAMPAÑA -->
+  <div style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+      <h3 style="margin: 0; font-size: 18px; font-weight: 800; color: #0f172a;">🎯 Grado de Consecución por Campaña</h3>
+      <span style="font-size: 12px; font-weight: 700; color: #64748b;">Objetivo Total: 2.567.021,00 €</span>
+    </div>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px;">
+        <thead>
+          <tr style="background-color: #f8fafc; border-bottom: 2px solid #e2e8f0; color: #475569; font-weight: 700;">
+            <th style="padding: 10px 12px;">Campaña</th>
+            <th style="padding: 10px 12px; text-align: right;">Objetivo Oficial</th>
+            <th style="padding: 10px 12px; text-align: right;">Facturación Actual</th>
+            <th style="padding: 10px 12px; width: 220px;">Progreso de Consecución</th>
+            <th style="padding: 10px 12px; text-align: right;">% Consecución</th>
+          </tr>
+        </thead>
+        <tbody id="campaign-body">
+          <!-- Relleno dinámico -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Barra de Filtros, Búsqueda y Marca para Asesores -->
   <div style="background: #ffffff; padding: 16px 20px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
     
     <!-- Botones Top Filter -->
     <div style="display: flex; align-items: center; gap: 6px;">
-      <span style="font-size: 13px; font-weight: 700; color: #475569; margin-right: 2px;">Vista:</span>
+      <span style="font-size: 13px; font-weight: 700; color: #475569; margin-right: 2px;">Vista Asesores:</span>
       <button class="filter-btn" onclick="setTopFilter(3)" id="btn-top3" style="padding: 7px 13px; border: 1px solid #cbd5e1; background: #ffffff; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 700; color: #334155; transition: all 0.2s;">Top 3</button>
       <button class="filter-btn" onclick="setTopFilter(5)" id="btn-top5" style="padding: 7px 13px; border: 1px solid #cbd5e1; background: #ffffff; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 700; color: #334155; transition: all 0.2s;">Top 5</button>
       <button class="filter-btn" onclick="setTopFilter(10)" id="btn-top10" style="padding: 7px 13px; border: 1px solid #cbd5e1; background: #ffffff; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 700; color: #334155; transition: all 0.2s;">Top 10</button>
@@ -85,7 +109,7 @@
 
   <!-- Sección de Gráficos -->
   <div style="background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-    <h3 style="margin: 0 0 16px 0; font-size: 16px; font-weight: 700; color: #0f172a;">📈 Comparativa de Rendimiento</h3>
+    <h3 style="margin: 0 0 16px 0; font-size: 16px; font-weight: 700; color: #0f172a;">📈 Comparativa de Rendimiento de Asesores</h3>
     <div style="position: relative; height: 300px; width: 100%;">
       <canvas id="rankingChart"></canvas>
     </div>
@@ -112,7 +136,20 @@
 </div>
 
 <script>
-// Dataset extraído del informe 'sábado.xlsx'
+// Objetivos por Campaña (sábado pm.xlsx)
+const campaignData = [
+  {"Campana": "35mm", "Objetivo": 184037.0, "Facturacion": 221837.4, "Consecucion": 120.54},
+  {"Campana": "Campus", "Objetivo": 214710.0, "Facturacion": 254226.0, "Consecucion": 118.4},
+  {"Campana": "Nubika", "Objetivo": 184037.0, "Facturacion": 196572.0, "Consecucion": 106.81},
+  {"Campana": "CEAC FP Oficial", "Objetivo": 302302.0, "Facturacion": 253021.55, "Consecucion": 83.7},
+  {"Campana": "Flou", "Objetivo": 226979.0, "Facturacion": 187378.0, "Consecucion": 82.55},
+  {"Campana": "Unisport", "Objetivo": 577861.0, "Facturacion": 408707.0, "Consecucion": 70.73},
+  {"Campana": "CEMP", "Objetivo": 528333.0, "Facturacion": 344918.48, "Consecucion": 65.28},
+  {"Campana": "Tokio", "Objetivo": 348762.0, "Facturacion": 182321.0, "Consecucion": 52.28},
+  {"Campana": "Mint", "Objetivo": 0.0, "Facturacion": 12071.9, "Consecucion": 0}
+];
+
+// Dataset extraído del informe 'sábado pm.xlsx'
 const rawDataWithBrands = [
   {"Asesor": "Beatriz Fernandez-España Barral", "Importe": 30246.0, "Registros": 14, "Marcas": [{"Marca": "Flou", "Importe": 30246.0, "Registros": 14}]},
   {"Asesor": "Javier Deus Garcia", "Importe": 19210.0, "Registros": 6, "Marcas": [{"Marca": "Flou", "Importe": 19210.0, "Registros": 6}]},
@@ -182,10 +219,10 @@ const rawDataWithBrands = [
   {"Asesor": "Brais Prieto Mexigos", "Importe": 22110.0, "Registros": 10, "Marcas": [{"Marca": "Unisport", "Importe": 22110.0, "Registros": 10}]},
   {"Asesor": "Carlos Matías Dos Santos Mora", "Importe": 33092.0, "Registros": 12, "Marcas": [{"Marca": "Unisport", "Importe": 33092.0, "Registros": 12}]},
   {"Asesor": "Gabriel Antonio Donis Tato", "Importe": 48960.0, "Registros": 18, "Marcas": [{"Marca": "Unisport", "Importe": 48960.0, "Registros": 18}]},
-  {"Asesor": "Gemma Fernández Nogueira", "Importe": 8720.0, "Registros": 3, "Marcas": [{"Marca": "Unisport", "Importe": 8720.0, "Registros": 3}]},
+  {"Asesor": "Gemma Fernández Nogueira", "Importe": 10454.0, "Registros": 4, "Marcas": [{"Marca": "Unisport", "Importe": 10454.0, "Registros": 4}]},
   {"Asesor": "Gerardo Manuel Roca Felpeto", "Importe": 31704.0, "Registros": 12, "Marcas": [{"Marca": "Unisport", "Importe": 31704.0, "Registros": 12}]},
   {"Asesor": "José Manuel Doldán Miras", "Importe": 12060.0, "Registros": 4, "Marcas": [{"Marca": "Unisport", "Importe": 12060.0, "Registros": 4}]},
-  {"Asesor": "Laura Costoya", "Importe": 24200.0, "Registros": 11, "Marcas": [{"Marca": "Unisport", "Importe": 24200.0, "Registros": 11}]},
+  {"Asesor": "Laura Costoya", "Importe": 28952.0, "Registros": 12, "Marcas": [{"Marca": "Unisport", "Importe": 28952.0, "Registros": 12}]},
   {"Asesor": "Lorena Daranae Zuloaga Sanchez", "Importe": 6720.0, "Registros": 3, "Marcas": [{"Marca": "Unisport", "Importe": 6720.0, "Registros": 3}]},
   {"Asesor": "Marcos Casal Bellón", "Importe": 24810.0, "Registros": 10, "Marcas": [{"Marca": "Unisport", "Importe": 24810.0, "Registros": 10}]},
   {"Asesor": "Maria Virginia Graterol Valera", "Importe": 5830.0, "Registros": 2, "Marcas": [{"Marca": "Unisport", "Importe": 5830.0, "Registros": 2}]},
@@ -212,6 +249,49 @@ const brandColors = {
   'Tokio': '#4f46e5',
   'Mint': '#10b981'
 };
+
+function renderCampaignTable() {
+  const tbody = document.getElementById('campaign-body');
+  tbody.innerHTML = '';
+
+  campaignData.forEach(c => {
+    const tr = document.createElement('tr');
+    tr.style.borderBottom = '1px solid #f1f5f9';
+    
+    let progressColor = '#2563eb';
+    let badgeBg = '#eff6ff';
+    let badgeTextColor = '#1d4ed8';
+
+    if (c.Consecucion >= 100) {
+      progressColor = '#059669';
+      badgeBg = '#ecfdf5';
+      badgeTextColor = '#047857';
+    } else if (c.Consecucion < 65) {
+      progressColor = '#dc2626';
+      badgeBg = '#fef2f2';
+      badgeTextColor = '#b91c1c';
+    }
+
+    const percentageDisplay = c.Objetivo > 0 ? c.Consecucion.toFixed(2) + '%' : 'N/A';
+
+    tr.innerHTML = `
+      <td style="padding: 12px; font-weight: 700; color: #0f172a;">${c.Campana}</td>
+      <td style="padding: 12px; text-align: right; color: #64748b; font-weight: 600;">${c.Objetivo > 0 ? formatCurrency(c.Objetivo) : '-'}</td>
+      <td style="padding: 12px; text-align: right; font-weight: 700; color: #0f172a;">${formatCurrency(c.Facturacion)}</td>
+      <td style="padding: 12px;">
+        <div style="background: #e2e8f0; height: 10px; border-radius: 5px; overflow: hidden; width: 100%;">
+          <div style="background: ${progressColor}; height: 100%; width: ${Math.min(c.Consecucion, 100)}%; border-radius: 5px;"></div>
+        </div>
+      </td>
+      <td style="padding: 12px; text-align: right;">
+        <span style="background: ${badgeBg}; color: ${badgeTextColor}; padding: 4px 10px; border-radius: 12px; font-weight: 800; font-size: 12px;">
+          ${percentageDisplay}
+        </span>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
 
 function setTopFilter(count) {
   currentTopFilter = count;
@@ -275,12 +355,10 @@ function getProcessedData() {
 function updateKPIs(data) {
   const totalFacturacion = data.reduce((acc, curr) => acc + curr.Importe, 0);
   const totalVentas = data.reduce((acc, curr) => acc + curr.Registros, 0);
-  const totalAsesores = data.length;
   const ticketMedio = totalVentas > 0 ? totalFacturacion / totalVentas : 0;
 
   document.getElementById('kpi-facturacion').textContent = formatCurrency(totalFacturacion);
   document.getElementById('kpi-ventas').textContent = totalVentas;
-  document.getElementById('kpi-asesores').textContent = totalAsesores;
   document.getElementById('kpi-ticket').textContent = formatCurrency(ticketMedio);
 }
 
@@ -414,6 +492,7 @@ function renderDashboard() {
 
 // Inicializar al cargar
 document.addEventListener('DOMContentLoaded', () => {
+  renderCampaignTable();
   renderDashboard();
 });
 </script>
